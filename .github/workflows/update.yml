@@ -47,6 +47,11 @@ jobs:
             ~/.cache/ms-playwright
           key: ${{ runner.os }}-playwright
 
+      # Regenerate poetry.lock if it's out of sync
+      - name: Regenerate poetry.lock if necessary
+        run: |
+          poetry lock --no-update
+
       - name: Install dependencies
         run: poetry install --only main
 
