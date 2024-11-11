@@ -13,6 +13,7 @@ pyarrow = "^14.0.0"
 requests = "^2.31.0"
 playwright = "^1.38.0"
 brotli = "^1.1.0"
+inputimeout = "^1.0.0"
 
 
 [tool.poetry.group.dev.dependencies]
